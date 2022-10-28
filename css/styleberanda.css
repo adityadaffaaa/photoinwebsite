@@ -1,0 +1,606 @@
+/* <-- default css --> */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* <-- styling by Daffa Fawwaz Aditya --> */
+
+/* import google fonts, font family poppins dan lora */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* style guide */
+:root {
+  --primarycolor: #034c5f;
+  --secondarycolor: #ee6457;
+  --background: #97bec6;
+  --text1: #313131;
+  --text2: #ffffff;
+  --text3: #adadad;
+  --text4: #6f6f6f;
+  --heading1: 48px;
+  --heading2: 36px;
+  --heading3: 28px;
+  --heading4: 24px;
+  --heading5: 18px;
+  --paragraph1: 16px;
+  --paragraph2: 14px;
+  --paragraph3: 12px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 3000px;
+}
+
+/* styling navigasi bar */
+header {
+  background-color: var(--text2);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  box-shadow: 0px 0px 24px var(--text3);
+  border-radius: 0px 0px 16px 16px;
+  z-index: 2;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+header ul li {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+header ul .clear {
+  clear: both;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--text1);
+  font-size: var(--heading5);
+  text-transform: capitalize;
+  font-family: "Lora";
+  font-weight: 400;
+  padding: 14px 24px;
+  transition: all 200ms ease-in-out;
+}
+
+header ul a:hover {
+  background-color: var(--primarycolor);
+  color: var(--text2);
+}
+header ul #active a {
+  background-color: var(--primarycolor);
+  color: var(--text2);
+}
+header .wraplogo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+header nav img {
+  height: 24px;
+}
+header .wrapbtn {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+header .wrapbtn .wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+header .wrapbtn a {
+  background-color: var(--primarycolor);
+  text-transform: capitalize;
+  color: var(--text2);
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: var(--paragraph1);
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+header .wrapbtn a:hover {
+  box-shadow: 0px 0px 12px var(--primarycolor);
+}
+header .wrapbtn #signup {
+  background-color: var(--secondarycolor);
+}
+header .wrapbtn #signup:hover {
+  box-shadow: 0px 0px 12px var(--secondarycolor);
+}
+
+/* styling hero */
+.hero {
+  margin-top: 46px;
+  background-image: url("../assets/heroberanda.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 690px;
+}
+.hero .filter {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.38) 0%, rgba(3, 76, 95, 0.53) 100%);
+  height: 100%;
+}
+.hero .container {
+  margin: 0px 150px;
+  height: 100%;
+}
+
+.hero .wrapcontent {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 24px;
+}
+
+.hero h1 {
+  margin-top: 220px;
+  font-size: var(--heading1);
+  color: var(--text2);
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.hero p {
+  color: var(--text2);
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: var(--paragraph1);
+}
+.hero a {
+  color: var(--text2);
+  text-decoration: inherit;
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: var(--paragraph1);
+  border-radius: 8px;
+  padding: 10px 14px;
+  background-color: var(--primarycolor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  box-sizing: border-box;
+  width: 138px;
+  transition: all 200ms ease-in-out;
+}
+.hero a:hover {
+  background-color: var(--secondarycolor);
+  box-shadow: 0px 0px 12px var(--secondarycolor);
+  gap: 12px;
+}
+
+/* styling about us */
+.aboutus {
+  margin-top: 70px;
+}
+.aboutus .container {
+  margin: 0px 150px;
+}
+.aboutus .titleaboutus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.aboutus #imgaboutus1 {
+  height: 240px;
+  float: left;
+  margin: 0px 24px 12px 0px;
+  border-radius: 16px;
+}
+.aboutus .wrapphotoin {
+  width: 950px;
+}
+.aboutus .photoin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.aboutus .clear {
+  clear: both;
+}
+.aboutus h2 {
+  font-size: var(--heading2);
+  color: var(--text1);
+  font-family: "Poppins";
+  font-weight: 700;
+}
+.aboutus h3 {
+  font-size: var(--heading3);
+  color: var(--text1);
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.aboutus p {
+  font-size: var(--paragraph1);
+  color: var(--text1);
+  font-family: "Lora";
+  text-align: justify;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.aboutus .experience {
+  border-radius: 32px;
+  margin-top: 60px;
+  background-color: var(--primarycolor);
+  height: 448px;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus .wrapexperience {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.aboutus .experience img {
+  height: 373px;
+  position: relative;
+  right: 40px;
+  border-radius: 32px;
+}
+
+.aboutus .experience h3 {
+  font-size: var(--heading3);
+  color: var(--text2);
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.aboutus .experience p {
+  background-color: var(--text2);
+  font-size: var(--paragraph1);
+  color: var(--text1);
+  padding: 10px;
+  font-family: "Lora";
+  text-align: justify;
+  line-height: 20px;
+  font-weight: 400;
+}
+.aboutus .textexperience {
+  z-index: 1;
+}
+
+.aboutus3 {
+  margin-top: 60px;
+}
+.aboutus3 .wrapimgaboutus3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.aboutus3 img {
+  height: 390px;
+  border-radius: 32px;
+}
+.aboutus3 .wrapaboutus3 {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.aboutus3 .formaboutus3 {
+  width: 560px;
+}
+.aboutus3 h3 {
+  text-align: center;
+}
+.aboutus3 p {
+  text-align: center;
+}
+.aboutus3 .wrapbtnaboutus3 {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.aboutus3 a {
+  text-decoration: inherit;
+  background-color: var(--primarycolor);
+  color: var(--text2);
+  font-size: var(--paragraph1);
+  font-family: "Lora";
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 10px 16px;
+  transition: all 200ms ease-in-out;
+}
+.aboutus3 #btncontactus:hover {
+  background-color: var(--secondarycolor);
+  box-shadow: 0px 0px 12px var(--secondarycolor);
+}
+.aboutus3 #btnbooking {
+  background-color: transparent;
+  color: var(--primarycolor);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0px;
+  transition: all 200ms ease-in-out;
+}
+
+.aboutus3 #btnbooking:hover {
+  gap: 12px;
+}
+
+/* styling ourclients */
+
+.ourclients {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+.ourclients h2 {
+  font-size: var(--heading2);
+  font-family: "Poppins";
+  text-align: center;
+  font-weight: 700;
+  color: var(--text1);
+}
+.ourclients .clietatas {
+  display: inline-block;
+}
+.ourclients .clientbawah {
+  display: inline;
+}
+.ourclients img {
+  height: 72px;
+  margin: 16px 24px;
+  transition: all 200ms ease-in-out;
+}
+.ourclients a {
+  text-decoration: inherit;
+}
+.ourclients img:hover {
+  transform: scale(120%);
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.3));
+}
+.wrapbtnview {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ourclients .btnviewmore {
+  margin-top: 30px;
+  border-radius: 8px;
+  background-color: var(--primarycolor);
+  font-family: "Lora";
+  padding: 10px 14px;
+  color: var(--text2);
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  width: 110px;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+}
+.ourclients .btnviewmore:hover {
+  background-color: var(--secondarycolor);
+  gap: 12px;
+  box-shadow: 0px 0px 12px var(--secondarycolor);
+}
+
+/* styling footer */
+footer {
+  background-color: var(--secondarycolor);
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 32px 32px 0px 0px;
+}
+footer .wrapfooter {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 1200px;
+}
+footer h1 {
+  font-size: var(--heading1);
+  font-family: "Poppins";
+  font-weight: 700;
+  color: var(--text2);
+}
+
+footer .paragrafdeskripsi {
+  font-size: var(--paragraph1);
+  font-family: "Lora";
+  font-weight: 400;
+  color: var(--text2);
+  width: 463px;
+  line-height: 20px;
+}
+
+footer h5 {
+  font-size: var(--heading5);
+  font-family: "Poppins";
+  font-weight: 600;
+  color: var(--text2);
+}
+
+footer p {
+  font-size: var(--paragraph2);
+  font-family: "Lora";
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 20px;
+  width: 265px;
+}
+footer .icon ul {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+footer .deskripsi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .mycompany {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+footer .contactus {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+footer .socmed {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.copyright {
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora";
+  font-weight: 400;
+  color: var(--text2);
+  background-color: var(--primarycolor);
+}

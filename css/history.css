@@ -1,0 +1,535 @@
+/* <-- default css --> */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* <-- styling by Daffa Fawwaz Aditya --> */
+
+/* import google fonts, font family poppins dan lora */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* style guide */
+:root {
+  --primarycolor: #034c5f;
+  --secondarycolor: #ee6457;
+  --background: #97bec6;
+  --text1: #313131;
+  --text2: #ffffff;
+  --text3: #adadad;
+  --text4: #6f6f6f;
+  --heading1: 48px;
+  --heading2: 36px;
+  --heading3: 28px;
+  --heading4: 24px;
+  --heading5: 18px;
+  --paragraph1: 16px;
+  --paragraph2: 14px;
+  --paragraph3: 12px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--text2);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  box-shadow: 0px 0px 24px var(--text3);
+  border-radius: 0px 0px 16px 16px;
+  z-index: 2;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+header ul li {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+header ul .clear {
+  clear: both;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--text1);
+  font-size: var(--heading5);
+  text-transform: capitalize;
+  font-family: "Lora";
+  font-weight: 400;
+  padding: 14px 24px;
+  transition: all 200ms ease-in-out;
+}
+
+header ul a:hover {
+  background-color: var(--primarycolor);
+  color: var(--text2);
+}
+header ul #active a {
+  background-color: var(--primarycolor);
+  color: var(--text2);
+}
+header .wraplogo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+header nav img {
+  height: 24px;
+}
+header .wrapuser {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+header .wrapuser .wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+header .wrapuser img {
+  height: 40px;
+  border-radius: 100%;
+}
+header .wrapuser p {
+  font-size: var(--paragraph1);
+  font-family: "Lora";
+  color: var(--text1);
+  font-weight: 400;
+}
+header .wrapuser a {
+  font-size: var(--paragraph1);
+  font-family: "Lora";
+  color: var(--primarycolor);
+  font-weight: 600;
+}
+
+/* styling hero */
+.hero {
+  margin-top: 46px;
+  background-image: url("../assets/heroriwayat.png");
+  background-size: cover;
+  background-attachment: scroll;
+  height: 475px;
+}
+.hero .filter {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.38) 0%, rgba(3, 76, 95, 0.53) 100%);
+  height: 100%;
+}
+.hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.hero h1 {
+  font-size: var(--heading1);
+  font-family: "Poppins";
+  color: var(--text2);
+  font-weight: 700;
+}
+
+/* styling content */
+.content {
+  margin-top: 54px;
+}
+.content .container {
+  margin: 0px 150px;
+}
+.content .penyaringan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.content ul {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.content ul li a {
+  text-decoration: none;
+  color: var(--primarycolor);
+  padding: 10px 14px;
+  border: solid 2px var(--primarycolor);
+  border-radius: 8px;
+  transition: all 200ms ease-in-out;
+}
+.content ul li a:hover {
+  background-color: var(--primarycolor);
+  color: var(--text2);
+}
+.content ul .activecategory a {
+  padding: 10px 14px;
+  background-color: var(--primarycolor);
+  color: var(--text2);
+}
+.content .search {
+  display: flex;
+  align-items: center;
+}
+.content .search .fieldsearch {
+  padding: 10px 14px;
+  width: 320px;
+  border-radius: 8px;
+  font-family: "Lora";
+  font-size: var(--paragraph1);
+  color: var(--text1);
+  margin-bottom: 4px;
+  margin-right: 20px;
+}
+.content .search .iconfilter {
+  cursor: pointer;
+}
+
+/* styling history table */
+.content .historytable {
+  margin: 42px 0px 24px 0px;
+}
+.content .historytable table {
+  width: 100%;
+}
+.content .historytable th {
+  text-align: center;
+  background-color: var(--secondarycolor);
+  color: var(--text2);
+  padding: 14px 10px;
+  font-family: "Poppins";
+  font-size: var(--heading5);
+  font-weight: 500;
+}
+.content .historytable .th1 {
+  border-radius: 16px 0px 0px 0px;
+}
+.content .historytable .th7 {
+  border-radius: 0px 16px 0px 0px;
+}
+.content .historytable .th7 p {
+  display: none;
+}
+.content .historytable td {
+  text-align: center;
+  color: var(--text1);
+  padding: 10px;
+  font-family: "Lora";
+  font-size: var(--paragraph1);
+  font-weight: 400;
+}
+.content .historytable tbody tr {
+  border-bottom: solid 1px var(--text3);
+}
+
+.content .historytable .done {
+  padding: 4px 6px;
+  background-color: var(--primarycolor);
+  color: var(--text2);
+  border-radius: 8px;
+}
+
+.content .wrap img {
+  height: 42px;
+  border-radius: 100%;
+}
+
+.content .wrapidentitas .namafotografer {
+  text-align: start;
+  font-size: var(--paragraph1);
+  font-family: "Lora";
+  font-weight: 600;
+  color: var(--text1);
+}
+.content .wrapidentitas .socmedfotografer {
+  text-align: start;
+  font-size: var(--paragraph1);
+  font-family: "Lora";
+  font-weight: 400;
+  color: var(--text4);
+}
+.content .wrapidentitas {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.content .wrap {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.content .wrapmore {
+  cursor: pointer;
+}
+
+/* styling pagination */
+.content .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.content .pagination .btnprevious {
+  background-color: var(--secondarycolor);
+  padding: 4px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.content .pagination .btnprevious:hover {
+  background-color: var(--primarycolor);
+}
+.content .pagination .btnnext {
+  background-color: var(--secondarycolor);
+  padding: 4px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.content .pagination .btnnext:hover {
+  background-color: var(--primarycolor);
+}
+.content .paging {
+  display: flex;
+  align-items: center;
+}
+.content .paging ul {
+  gap: 4px;
+}
+.content .paging .page {
+  background-color: var(--background);
+  color: var(--text2);
+  border: none;
+  /* padding: 8px; */
+}
+.content .paging .page:hover {
+  background-color: var(--primarycolor);
+  /* padding: 8px; */
+}
+.content .paging .activepage .page {
+  background-color: var(--primarycolor);
+  color: var(--text2);
+  border: none;
+  /* padding: 8px; */
+}
+/* styling footer */
+footer {
+  background-color: var(--secondarycolor);
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 32px 32px 0px 0px;
+}
+footer .wrapfooter {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 1200px;
+}
+footer h1 {
+  font-size: var(--heading1);
+  font-family: "Poppins";
+  font-weight: 700;
+  color: var(--text2);
+}
+
+footer .paragrafdeskripsi {
+  font-size: var(--paragraph1);
+  font-family: "Lora";
+  font-weight: 400;
+  color: var(--text2);
+  width: 463px;
+  line-height: 20px;
+}
+
+footer h5 {
+  font-size: var(--heading5);
+  font-family: "Poppins";
+  font-weight: 600;
+  color: var(--text2);
+}
+
+footer p {
+  font-size: var(--paragraph2);
+  font-family: "Lora";
+  font-weight: 400;
+  color: var(--text2);
+  line-height: 20px;
+  width: 265px;
+}
+footer .icon ul {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+footer .deskripsi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .mycompany {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+footer .contactus {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+footer .socmed {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.copyright {
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora";
+  font-weight: 400;
+  color: var(--text2);
+  background-color: var(--primarycolor);
+}
